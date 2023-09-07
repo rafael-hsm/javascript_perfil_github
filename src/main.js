@@ -31,7 +31,7 @@ class APP{
         });
 
         // Renderizar a tela
-        console.log(this.repositorios);
+        this.renderizarTela()
     }
 
     renderizarTela(){
@@ -55,7 +55,29 @@ class APP{
             strong.appendChild(txtNome);
             li.appendChild(strong);
 
-        })
+            //<p>
+            let p = document.createElement('p');
+            let txtDescricao = document.createTextNode(repositorio.descricao)
+            p.appendChild(txtDescricao)
+            li.appendChild(p);
+
+            //<a>
+            let a = document.createElement('a');
+            a.setAttribute('target', '_blank');
+            a.setAttribute('href', repositorio.link);
+            let txtA = document.createTextNode('Acessar');
+            a.appendChild(txtA);
+            li.appendChild(a);
+
+            // Adicionar <li> como filho da ul
+            this.lista.appendChild(li);
+
+            // Limpar o conteúdo do input
+            this.formulario.querySelector('input[id=repositorio]').value = '';
+
+            // Adiciona o foco no input
+            this.formulario.querySelector('input[id=repositorio]').focus();
+        });
     }
 }
 
