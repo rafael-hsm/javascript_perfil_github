@@ -4,8 +4,8 @@ class App{
     //Construtor
     constructor(){
         // Carrega os dados do localStorage
-
-        this.repositorios = JSON.parse(localStorage.getItem('repositorios')) || [];
+        const repositoriosData = localStorage.getItem('repositorios');
+        this.repositorios = Array.isArray(repositoriosData) ? repositoriosData : [];
 
         // Form
         this.formulario = document.querySelector('form');
@@ -66,6 +66,7 @@ class App{
             // Salva os repositórios no localStorage
             this.salvarRepositoriosNoLocalStorage();
         }catch(erro){
+            console.log('input: ', input)
             // Limpa Busca, vamos remover a mensagem de busca e deixar apenas a de erro
             this.lista.removeChild(document.querySelector('.list-group-item-warning'));
 
