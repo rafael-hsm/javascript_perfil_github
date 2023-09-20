@@ -20,7 +20,8 @@
     "axios": "^1.5.0"
   },
   "scripts": {
+    "start": "node server.js",
     "dev": "webpack-dev-server --mode=development",
     "prod": "webpack --mode=production"
-  }
+  }  
 }
