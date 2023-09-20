@@ -6,7 +6,6 @@
   "repository": "https://github.com/rafael-hsm/javascript_perfil_github.git",
   "author": "rafameireles2011@gmail.com",
   "license": "MIT",
-  "type": "module",
   "devDependencies": {
     "@babel/cli": "^7.22.15",
     "@babel/core": "^7.22.15",
@@ -21,7 +20,6 @@
     "axios": "^1.5.0"
   },
   "scripts": {
-    "start": "node server.js",
     "dev": "webpack-dev-server --mode=development",
     "prod": "webpack --mode=production"
   }  

@@ -1,4 +1,4 @@
 services:
   - name: github_repositorios
     buildCommand: yarn install
-    startCommand: yarn prod
+    startCommand: yarn dev
