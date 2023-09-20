@@ -1,4 +1,4 @@
 services:
-  - name: web
-    buildCommand: npm install
-    startCommand: npm start
+  - name: github_repositorios
+    buildCommand: yarn install
+    startCommand: yarn prod
