@@ -6,6 +6,7 @@
   "repository": "https://github.com/rafael-hsm/javascript_perfil_github.git",
   "author": "rafameireles2011@gmail.com",
   "license": "MIT",
+  "type": "module",
   "devDependencies": {
     "@babel/cli": "^7.22.15",
     "@babel/core": "^7.22.15",
